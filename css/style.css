@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Oswald:wght@200&family=Rubik&display=swap');
+
+:root{
+    --colorNegro: #212121;
+    --colorBlanco: #f8f8f8;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'BhuTuka Expanded One', cursive;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Rubik', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 6rem;
+    max-width: 100%;
+    gap: 48rem;
+    
+    
+}
+
+a{
+    text-decoration: none;
+    color: var(--colorNegro);
+}
+nav > a {
+    margin-left: 15px;
+    
+}
+
+.hamburgesa{
+    color: var(--colorNegro);
+    display: none;
+    font-size: 32px;
+}
+.contenedorHero{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10rem;
+    max-width: 100%;
+    
+    
+    
+}
+.imagenHero{
+    display: flex;
+    width: 19%;
+    flex-direction:row;
+    align-items: center;
+    
+    border-radius: 2.5%;
+}
+.contenedorTextoHero{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    
+
+    margin-bottom: 2rem;
+}
+.contenedorTextoHero > h1 {
+    text-align: left;
+    font-size: 2.9rem;
+    font-weight: lighter;
+    color: #383737;
+    
+}
+.contenedorTextoHero > h2{
+    margin-top: 1rem;
+    color: var(--colorNegro);
+    font-size: 1.8rem;
+    font-weight: lighter;
+    letter-spacing: 0.08rem;
+    
+}
+strong,b{
+    color: rgb(0, 0, 0);
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: 0.1rem;
+    
+}
+.logosHero{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    
+    color: var(--colorNegro);
+    margin-top: 8rem;
+    max-width: 100%;
+    gap: 48rem;
+}
+.logosHero > .iconosHero{
+    display: flex;
+    font-size: 1.6rem;
+    color: var(--colorNegro);
+    letter-spacing: 2rem;
+    justify-content: center;
+}
