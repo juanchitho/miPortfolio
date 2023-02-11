@@ -20,8 +20,8 @@ header{
     justify-content: space-around;
     align-items: center;
     margin-top: 6rem;
-    max-width: 100%;
-    gap: 48rem;
+    
+    
     
     
 }
@@ -40,32 +40,41 @@ nav > a {
     display: none;
     font-size: 32px;
 }
+.hero{
+    display: flex;
+    flex-direction: column;
+    
+}
 .contenedorHero{
     display: flex;
     flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-around;
+    
+    justify-content: space-between;
     margin-top: 10rem;
-    max-width: 100%;
+    max-width: 81%;
+    align-items: center;
+    gap: 10rem;
+    
     
     
     
 }
 .imagenHero{
     display: flex;
-    width: 19%;
-    flex-direction:row;
-    align-items: center;
+    flex-direction: row;
+    width: 20%;
+    align-items: end;
+    
     
     border-radius: 2.5%;
 }
 .contenedorTextoHero{
     display: flex;
     flex-direction: column;
-    
+    margin-left: 20rem;
     justify-content: center;
     
-
+    justify-content: space-around;
     margin-bottom: 2rem;
 }
 .contenedorTextoHero > h1 {
@@ -98,13 +107,52 @@ strong,b{
     
     color: var(--colorNegro);
     margin-top: 8rem;
-    max-width: 100%;
-    gap: 48rem;
+    
 }
 .logosHero > .iconosHero{
     display: flex;
-    font-size: 1.6rem;
+    font-size: 2rem;
     color: var(--colorNegro);
     letter-spacing: 2rem;
     justify-content: center;
+}
+.whatIDo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5rem;
+}
+.textoWhatIdo{
+    display: flex;
+    flex-direction:row;
+    
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--colorNegro);
+    padding: 15% 5% 3% 18%;/*top-right-bottom-left*/
+    
+}
+.contenedorServicios{
+    display: flex;
+    width: 70%;
+}
+.contenderoTextoServicios{
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.contenderoTextoServicios > h2{
+    letter-spacing: 0.11rem;
+    margin-bottom: 1.5rem;
+}
+.contenderoTextoServicios > p{
+    color: #7f7f7f;
+}
+.colorIcono{
+    display: flex;
+    flex-direction: column;
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
+    color: var(--colorNegro);
 }
