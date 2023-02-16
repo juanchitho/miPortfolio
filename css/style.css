@@ -17,9 +17,11 @@ html{
 }
 header{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    margin-top: 6rem;
+    width: 70%;
+    margin: auto;
+    padding: 4rem;
     
     
     
@@ -29,6 +31,11 @@ header{
 a{
     text-decoration: none;
     color: var(--colorNegro);
+    
+}
+nav{
+    display: flex;
+    
 }
 nav > a {
     margin-left: 15px;
@@ -49,9 +56,10 @@ nav > a {
     display: flex;
     flex-direction: row-reverse;
     
-    justify-content: space-between;
-    margin-top: 10rem;
-    max-width: 81%;
+    justify-content: space-around;
+    padding-top: 10rem;
+    width: 70%;
+    margin: auto;
     align-items: center;
     gap: 10rem;
     
@@ -62,26 +70,27 @@ nav > a {
 .imagenHero{
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
     width: 20%;
-    align-items: end;
-    
+    flex-grow: 1;
     
     border-radius: 2.5%;
 }
 .contenedorTextoHero{
     display: flex;
     flex-direction: column;
-    margin-left: 20rem;
-    justify-content: center;
-    
+    margin: auto;
+    align-items: start;
+    flex-grow: 2;
     justify-content: space-around;
     margin-bottom: 2rem;
 }
 .contenedorTextoHero > h1 {
-    text-align: left;
+    
     font-size: 2.9rem;
     font-weight: lighter;
     color: #383737;
+    flex-grow: 2;
     
 }
 .contenedorTextoHero > h2{
@@ -90,6 +99,7 @@ nav > a {
     font-size: 1.8rem;
     font-weight: lighter;
     letter-spacing: 0.08rem;
+    flex-grow: 2;
     
 }
 strong,b{
@@ -102,19 +112,25 @@ strong,b{
 .logosHero{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    justify-content: space-around;
-    
+    padding-top: 10rem;
+    justify-content: space-between;
+    width: 70%;
     color: var(--colorNegro);
-    margin-top: 8rem;
+    margin: auto;
     
 }
-.logosHero > .iconosHero{
+.iconosHero{
     display: flex;
     font-size: 2rem;
     color: var(--colorNegro);
     letter-spacing: 2rem;
-    justify-content: center;
+    justify-content: start;
+    
+}
+.iconosHero a:hover{
+    transition: 0.4s;
+    color: rgb(20, 23, 187);
+    
 }
 .whatIDo{
     display: flex;
@@ -130,12 +146,14 @@ strong,b{
     font-size: 3rem;
     font-weight: 900;
     color: var(--colorNegro);
-    padding: 15% 5% 3% 18%;/*top-right-bottom-left*/
+    padding: 15% 5% 5% 18%;/*top-right-bottom-left*/
     
 }
 .contenedorServicios{
     display: flex;
     width: 70%;
+    
+    align-content: center;
 }
 .contenderoTextoServicios{
     margin-left: 1rem;
@@ -144,7 +162,7 @@ strong,b{
 }
 .contenderoTextoServicios > h2{
     letter-spacing: 0.11rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.7rem;
 }
 .contenderoTextoServicios > p{
     color: #7f7f7f;
@@ -155,4 +173,56 @@ strong,b{
     font-size: 2.4rem;
     margin-bottom: 1.5rem;
     color: var(--colorNegro);
+}
+/*
+.contenderoTextoServicios:hover{
+    background-color: var(--colorNegro);
+    color: var(--colorBlanco);
+    
+}*/
+.skills{
+    
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    width: 70%;
+    margin: auto;
+    align-items: center;
+    align-content: center;
+    
+    
+}
+.skills i {
+    display: flex;
+    font-size: 3.5rem;
+    margin-left: 1rem;
+    align-items: center;
+    
+    
+}
+.skills div{
+    display: flex;
+    flex-direction: row;
+    border-radius:14px;
+    width: 22rem;
+    justify-content: space-evenly;
+    margin-top: 1.5rem;
+    height: 5rem;
+    
+}
+h3{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    font-weight: 100;
+    font-size: 1.5rem;
+    
+    
+}
+.skills div:hover{
+    color: var(--colorBlanco);
+    background-color: var(--colorNegro);
+    transition: 0.4s;
+    box-shadow: 1px 2px 6px #3a3a3a;
 }
