@@ -64,8 +64,6 @@ nav > a {
     gap: 10rem;
     
     
-    
-    
 }
 .imagenHero{
     display: flex;
@@ -102,6 +100,12 @@ nav > a {
     flex-grow: 2;
     
 }
+.tituloHero b:hover{
+    
+    transition: 0.4s;
+    box-shadow: 1px 2px 6px #3a3a3a;
+}
+
 strong,b{
     color: rgb(0, 0, 0);
     font-size: 3rem;
@@ -142,21 +146,25 @@ strong,b{
 .textoWhatIdo{
     display: flex;
     flex-direction:row;
-    
+    width: 70%;
     font-size: 3rem;
     font-weight: 900;
     color: var(--colorNegro);
-    padding: 15% 5% 5% 18%;/*top-right-bottom-left*/
+    margin: auto;
+    padding-bottom: 4rem;
+    padding-top: 16rem;
+    /*top-right-bottom-left*/
     
 }
 .contenedorServicios{
     display: flex;
     width: 70%;
-    
+    margin: auto;
     align-content: center;
+    justify-content: space-between;
 }
 .contenderoTextoServicios{
-    margin-left: 1rem;
+    
     display: flex;
     flex-direction: column;
 }
@@ -224,5 +232,81 @@ h3{
     color: var(--colorBlanco);
     background-color: var(--colorNegro);
     transition: 0.4s;
+    box-shadow: 1px 2px 6px #3a3a3a;
+}
+/* Linea */
+hr.solid {
+    border-top: 2px solid #bbb;
+  }
+.experience{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+    justify-content: space-between;
+}
+.parrafoExperience > h2{
+    padding-top: 2rem;
+    color: var(--colorNegro);
+}
+.parrafoExperience > p{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    color: #7f7f7f;
+}
+footer{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    padding-top: 15rem;
+    justify-content: space-between;
+    padding-bottom: 17rem;
+}
+.footerItself{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    width: 50%;
+}
+.footerItself h1{
+    display: flex;
+    flex-direction:row;
+    
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--colorNegro);
+    
+    padding-bottom: 3rem;
+}
+.footerItself h2{
+    font-size: 1.8rem;
+    font-weight: lighter;
+    color: rgb(36, 33, 33);
+    padding-bottom: 4.2rem;
+}
+.ultimasDosCajas{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 6rem;
+}
+.ultimasDosCajas p{
+    padding-bottom: 1.4rem;
+    color: #7f7f7f;
+    font-size: 1.2rem;
+}
+.ultimasDosCajas a{
+    font-size: 1.4rem;
+}
+.iconosFooter{
+    letter-spacing: 0.5rem;
+    font-size: 1.8rem;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--colorNegro);
+    width: 50%;
+    height: 400px;
     box-shadow: 1px 2px 6px #3a3a3a;
 }
