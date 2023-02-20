@@ -54,32 +54,32 @@ nav > a {
 }
 .contenedorHero{
     display: flex;
-    flex-direction: row-reverse;
-    
-    justify-content: space-around;
+    justify-content: space-between;
     padding-top: 10rem;
     width: 70%;
     margin: auto;
     align-items: center;
-    gap: 10rem;
+    flex-flow: wrap;
+    
+    
     
     
 }
 .imagenHero{
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    width: 20%;
-    flex-grow: 1;
+    justify-content: end;
     
-    border-radius: 2.5%;
+    width: 40%;
+    height: 15rem;
+    
+    
 }
 .contenedorTextoHero{
     display: flex;
     flex-direction: column;
-    margin: auto;
+    width: 60%;
     align-items: start;
-    flex-grow: 2;
+    
     justify-content: space-around;
     margin-bottom: 2rem;
 }
@@ -100,11 +100,13 @@ nav > a {
     flex-grow: 2;
     
 }
+/* pensar que detalle darle
 .tituloHero b:hover{
     
     transition: 0.4s;
     box-shadow: 1px 2px 6px #3a3a3a;
 }
+*/
 
 strong,b{
     color: rgb(0, 0, 0);
@@ -121,6 +123,7 @@ strong,b{
     width: 70%;
     color: var(--colorNegro);
     margin: auto;
+    flex-flow: wrap;
     
 }
 .iconosHero{
@@ -130,6 +133,7 @@ strong,b{
     letter-spacing: 2rem;
     justify-content: start;
     
+    
 }
 .iconosHero a:hover{
     transition: 0.4s;
@@ -138,10 +142,15 @@ strong,b{
 }
 .whatIDo{
     display: flex;
+    
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    
     align-items: center;
     padding-bottom: 5rem;
+    width: 70%;
+    margin: auto;
+    
 }
 .textoWhatIdo{
     display: flex;
@@ -153,13 +162,13 @@ strong,b{
     margin: auto;
     padding-bottom: 4rem;
     padding-top: 16rem;
+    
     /*top-right-bottom-left*/
     
 }
 .contenedorServicios{
     display: flex;
-    width: 70%;
-    margin: auto;
+   
     align-content: center;
     justify-content: space-between;
 }
@@ -167,6 +176,8 @@ strong,b{
     
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    
 }
 .contenderoTextoServicios > h2{
     letter-spacing: 0.11rem;
@@ -182,12 +193,8 @@ strong,b{
     margin-bottom: 1.5rem;
     color: var(--colorNegro);
 }
-/*
-.contenderoTextoServicios:hover{
-    background-color: var(--colorNegro);
-    color: var(--colorBlanco);
-    
-}*/
+
+
 .skills{
     
     display: flex;
@@ -261,6 +268,7 @@ footer{
     padding-top: 15rem;
     justify-content: space-between;
     padding-bottom: 17rem;
+    flex-flow: wrap;
 }
 .footerItself{
     display: flex;
@@ -309,4 +317,159 @@ footer{
     width: 50%;
     height: 400px;
     box-shadow: 1px 2px 6px #3a3a3a;
+    justify-content: center;
+    padding: auto;;
+}
+.form label{
+    display: flex;
+    color: #bbb;
+    width: 70%;
+    margin: auto;
+}
+.form input{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    padding: 0.3rem;
+    border: solid 1px #999;
+    color: var(--colorNegro);
+    
+}
+.form textarea{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    height: 100px;
+    
+    resize: none;
+}
+input[type=button], input[type=submit], input[type=reset] {
+    display: flex;
+    width: 20%;
+    margin-right: 5.75rem;
+    margin-top: 1rem;
+    background-color: var(--colorBlanco);
+    border: none;
+    color: var(--colorNegro);
+    
+    text-decoration: none;
+    
+    cursor: pointer;
+  }
+  
+
+  /*MEDIA QUERIES*/
+
+  @media(max-width: 1024px){
+     /*PORTADA*/
+
+    .contenedorHero{
+        flex: 1;
+        padding: 20% 5% 0% 5%;
+        
+        
+    }
+    .contenedorHero h1{
+        font-size: 2.5rem;
+        line-height: 0.9em; 
+
+    }
+    .contenedorHero h2{
+        font-size: 1.2rem;
+    }
+    .logosHero{
+        flex: 1;
+        padding: 20% 5% 0% 5%;
+    }
+    .logosHero a{
+        font-size: 1.3rem;
+        letter-spacing: 1rem;
+    }
+    .whatIDo{
+        padding: 7% 0% 0% 0%;
+    }
+    .whatIDo p{ 
+        font-size: 0.8rem;
+    }
+    .textoWhatIdo{
+        font-size: 2.5rem;
+    }
+    .footerItself h1{
+        font-size: 2rem;
+        
+    }
+    .footerItself h2{
+        font-size: 1.2rem;
+    }
+    .footerItself a{
+        font-size: 1.1rem;
+    }
+    .footerItself p{
+        font-size: 0.9rem;
+    }
+    .ultimasDosCajas div{
+        font-size: 0.1rem;
+        letter-spacing: 0rem;
+
+    }
+}
+
+
+
+
+
+   /*Pantallas de 768px o menos*/
+@media(max-width: 768px){
+
+    .contenedorHero{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    } 
+    .imagenHero{
+        width: 70%;
+        height: 10rem;
+        justify-content: center;
+        padding-top: 1rem;
+    }
+    .contenedorTextoHero{
+        width: 100%;
+    }
+}
+
+@media(max-width:600px){
+    
+    .hero > img{
+        width: 70%;
+    }
+    nav{
+        display: none;
+    }
+    .hamburgesa{
+        display: block;
+        color: black;
+    }
+    .logosHero{
+        font-size: 0.8rem;
+        
+        gap: none;
+        
+    }
+    .iconosHero{
+        
+        letter-spacing: none;
+        padding-bottom: 1rem;
+    }
+    .contenedorServicios{
+        flex-wrap: wrap;
+    }
+    .footerItself {
+        width: 100%;
+        
+    
+    }
+    .form{
+        width: 100%;
+    }
+    
 }
