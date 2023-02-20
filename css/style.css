@@ -140,6 +140,9 @@ strong,b{
     color: rgb(20, 23, 187);
     
 }
+.logosHero p{
+    font-size: 1.5rem;
+}
 .whatIDo{
     display: flex;
     
@@ -451,7 +454,6 @@ input[type=button], input[type=submit], input[type=reset] {
     }
     .logosHero{
         font-size: 0.8rem;
-        
         gap: none;
         
     }
