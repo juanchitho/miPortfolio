@@ -447,7 +447,7 @@ input[type=button], input[type=submit], input[type=reset] {
 
 @media(max-width:600px){
     
-    .hero > img{
+    .imagenHero{
         width: 70%;
     }
     nav{
