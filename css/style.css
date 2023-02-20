@@ -299,6 +299,7 @@ footer{
     display: flex;
     justify-content: space-between;
     margin-right: 6rem;
+    flex-flow: wrap;
 }
 .ultimasDosCajas p{
     padding-bottom: 1.4rem;
@@ -409,12 +410,15 @@ input[type=button], input[type=submit], input[type=reset] {
     }
     .footerItself p{
         font-size: 0.9rem;
+        
     }
     .ultimasDosCajas div{
         font-size: 0.1rem;
         letter-spacing: 0rem;
 
     }
+    .ultimasDosCajas p{
+        padding-bottom: 0.3rem;
 }
 
 
